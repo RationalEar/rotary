@@ -5,6 +5,7 @@ else $config['live'] = TRUE;
 
 $config['admin_panels'] = array( 'admin' );
 $config['site-name'] = 'Rotary Club';
+$config['club-type'] = 'Rotary';
 $config['address'] = 'No. 60 Colquhoun Street, Cnr Five Ave, Harare';
 $config['phone'] = '+263 123 456 789';
 $config['meetings'] = 'Meeting time not set';

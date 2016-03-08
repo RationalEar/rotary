@@ -15,7 +15,7 @@
 					</h4>
 					<p>
 						<?php 
-							echo $required_content['aboutus']['at_summary'].'<br>';
+							if(isset($required_content['aboutus']['at_summary'])) echo $required_content['aboutus']['at_summary'].'<br>';
 							echo anchor( 'about', 'Read More &raquo;', 'class="wite-text"' );
 						?>
 					</p>

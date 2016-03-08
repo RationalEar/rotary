@@ -21,7 +21,7 @@ $this->load->view("$theme/common/header.tpl");?>
 			<div class="slider-content">
 				<div class="col-md-12 text-center">
 				<h2 class="animated2">
-								<span>Welcome to <strong class="wite-text">Rotaract</strong></span>
+								<span>Welcome to <strong class="wite-text"><?php echo $this->config->item('club-type');?></strong></span>
 								</h2>
 				<h3 class="animated3 white">
 								<span><?php echo $this->config->item('site-name')?></span>
@@ -203,7 +203,7 @@ $this->load->view("$theme/common/header.tpl");?>
 
 		<!-- Some Text -->
 		<p class="text-center">
-			<?php echo $aboutus['at_summary'];?>		
+			<?php if(isset($aboutus['at_summary'])) echo $aboutus['at_summary'];?>		
 		</p>
 
 
