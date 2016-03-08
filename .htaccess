@@ -1,0 +1,32 @@
+RewriteEngine on
+
+#php_value include_path ".:/var/www/html/central/pear/PEAR"
+
+# Prevent CI index.php
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule .* index.php/$0 [PT,L] 
+
+# Prevent user access to the CI system folder.
+RewriteCond %{REQUEST_URI} ^system.*
+RewriteRule ^(.*)$ /central\/index.php?/$1 [L] 
+
+# Prevent user access to the CI application folder
+RewriteCond %{REQUEST_URI} ^site.*
+RewriteRule ^(.*)$ /central\/index.php?/$1 [L]
+
+#Options All -Indexes
+
+# Add this to the list of Media files
+AddType image/svg+xml svg svgz
+
+<IfModule mod_mime.c>
+	AddEncoding gzip svgz
+</IfModule>
+
+# BEGIN GZIP
+<ifmodule mod_deflate.c>
+	AddOutputFilterByType DEFLATE image/svg+xml
+</ifmodule>
+# END GZIP
+
