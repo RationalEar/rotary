@@ -16,6 +16,7 @@ $config['author'] = 'BIT Technologies';
 $config['author-url'] = 'http://www.bittechnologyz.com';
 
 $config['facebook'] = 'https://www.facebook.com';
-$config['twitter'] = 'https://twitter.com';
+$config['twitter'] = 'RotHreCentral';
+$config['twitter-widget-id'] = '699986841924194305';
 $config['google'] = 'https://plus.google.com';
 

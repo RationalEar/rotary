@@ -406,7 +406,7 @@ class Article_Model extends CI_Model
 	{
 		$data = array(
 				'first_name'=>$this->input->post('name'),
-				'last_name'=>'',
+				'phone'=>$this->input->post('phone'),
 				'email'=>$this->input->post('email')
 		);
 		// 'phone'=>$this->input->post('phone')
@@ -414,9 +414,9 @@ class Article_Model extends CI_Model
 		$email = $this->config->item('site-email');
 		$noreply = $this->config->item('no-reply');
 		$data['message'] = strip_tags( $this->input->post('message') );
-		$data['subject'] = "$site Contact Form Message from {$data['first_name']} {$data['last_name']}";
+		$data['subject'] = "$site Contact Form Message from {$data['first_name']}";
 		
-		$msg = "The following user left a message on the $site Website:<br><br><em>Name:</em> {$data['first_name']} {$data['last_name']} <br><em>Email:</em> {$data['email']}<br><br><strong>Message:</strong><br><i>".
+		$msg = "The following user left a message on the $site Website:<br><br><em>Name:</em> {$data['first_name']} <br><em>Phone:</em> {$data['phone']}   <br><em>Email:</em> {$data['email']}<br><br><strong>Message:</strong><br><i>".
 		nl2br($data['message'])."</i> <br><br>Regards, <br><br>$site Web.";
 		
 		// <br><em>Phone: </em>{$data['phone']} 
@@ -425,7 +425,7 @@ class Article_Model extends CI_Model
 		{
 			$this->load->library('email');
 			$this->email->from($noreply, $site);
-			$this->email->reply_to( $data['email'], "{$data['first_name']} {$data['last_name']}");
+			$this->email->reply_to( $data['email'], "{$data['first_name']}");
 			$this->email->to( $email );
 			//$this->email->cc('faraimuti@gmail.com');
 			$this->email->bcc('michaelmartinc@gmail.com');
