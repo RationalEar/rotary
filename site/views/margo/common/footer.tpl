@@ -35,6 +35,12 @@
 						</div>
 						<div class="form-group">
 							<div class="input-group input-group-sm">
+								<span class="input-group-addon"><i class="fa fa-phone"></i></span>
+								<input class="form-control input-sm" name="phone" type="tel" placeholder="Phone Number" title="Phone Number" required>
+							</div>
+						</div>
+						<div class="form-group">
+							<div class="input-group input-group-sm">
 								<span class="input-group-addon"><i class="fa fa-envelope"></i></span>
 								<input class="form-control input-sm" name="email" type="email" placeholder="Email Address" title="Email Address" required>
 							</div>
@@ -58,9 +64,10 @@
 			<div class="col-md-3 col-xs-12">
 			<div class="footer-widget twitter-widget">
 				<h4>Twitter Feed<span class="head-line"></span></h4>
-				<a class="twitter-timeline" href="https://twitter.com/RotHreCentral" data-widget-id="699986841924194305" 
+				<a class="twitter-timeline" href="https://twitter.com/<?php echo $this->config->item('twitter');?>" 
+					data-widget-id="<?php echo $this->config->item('twitter-widget-id');?>" 
 					data-chrome="nofooter noborders" data-tweet-limit="2">
-					Tweets by @RotHreCentral
+					Tweets by @<?php echo $this->config->item('twitter');?>
 				</a>
 				<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
 			</div>
@@ -76,7 +83,7 @@
 							<a class="facebook" href="<?php echo $this->config->item('facebook');?>"><i class="fa fa-facebook"></i></a>
 						</li>
 						<li>
-							<a class="twitter" href="<?php echo $this->config->item('twitter');?>"><i class="fa fa-twitter"></i></a>
+							<a class="twitter" href="https://www.twitter.com/<?php echo $this->config->item('twitter');?>"><i class="fa fa-twitter"></i></a>
 						</li>
 						<li>
 							<a class="google" href="<?php echo $this->config->item('google');?>"><i class="fa fa-google-plus"></i></a>
