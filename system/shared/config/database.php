@@ -75,12 +75,12 @@ $query_builder = TRUE;
 
 $db['default'] = array(
 	'dsn'	=> 'mysql:host=localhost;dbname=rotary',
-	'hostname' => 'localhost',
-	'username' => 'root',
-	'password' => 'Elshadai7',
-	'database' => 'rotary',
-	'dbdriver' => 'pdo',
-	'dbprefix' => 'av_',
+	'hostname' => 'localhost',#
+	'username' => 'root',#
+	'password' => 'Elshadai7',#
+	'database' => 'rotary',#
+	'dbdriver' => 'pdo',#
+	'dbprefix' => 'av_',#
 	'pconnect' => FALSE,
 	'db_debug' => (ENVIRONMENT !== 'production'),
 	'cache_on' => FALSE,
