@@ -1,0 +1,83 @@
+/*Highlights*/
+.highlights{
+	text-align: center;
+  }
+.highlights div{
+	margin-top: 20px;
+}.highlights div{
+	 margin-top: 20px;
+ }
+.highlights h3{
+	font-family: 'PT Sans', arial, sans-serif;
+	font-weight: 600;
+	margin-bottom: 25px;
+}
+.highlights i {
+	display: inline-block;
+	height: 110px;
+	margin-bottom: 20px;
+	width: 110px;
+	transition:all 0.2s ease-in-out;
+	-webkit-transition: all 0.1s ease-in-out;
+	-moz-transition: all 0.1s ease-in-out;
+	-o-transition: all 0.1s ease-in-out;
+	}
+.hl-resp{
+	background: url(../images/calendar.png) top no-repeat transparent;
+}
+.hl-code{
+	background: url(../images/info.png) top no-repeat transparent;
+}
+.hl-customize{
+	background: url(../images/rotary.png) top no-repeat transparent;
+}
+.hl-price{
+	background: url(../images/members.png) top no-repeat transparent;
+}
+.highlights div:hover i{
+	background-position: bottom;
+}
+.highlights div:hover>h3, .highlights div:hover>p{
+	color: #49ABCF;
+}
+
+.testimonials p
+{
+	line-height: 22px;
+	font-size: 12px;
+	padding: 0 15px 15px 38px;
+	background: #fff url('../images/quotes.png') no-repeat top left;
+	border-bottom: 1px dotted #efefef;
+	width: 95%;
+	text-align: left;
+}
+
+.testimonials p > span
+{
+	font: 4.2em Georgia,Times New Roman,Times,serif; 
+	float: left;
+	line-height: .75em;
+	padding: 5px 2px 0px 0px;
+}
+
+.page-section-banner
+{
+	padding:40px 0; 
+	background: url(../images/slide-02-bg.jpg) center #f9f9f9;
+}
+
+
+.thumbnail .team-member
+{
+	border: 1px solid #eee;
+    border-radius: 3px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    -o-border-radius: 3px;
+}
+
+.thumbnail .team-member .member-photo
+{
+	border: none;
+	border-color: transparent;
+}
