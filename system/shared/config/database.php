@@ -74,11 +74,11 @@ $active_group = 'default';
 $query_builder = TRUE;
 
 $db['default'] = array(
-	'dsn'	=> 'mysql:host=localhost;dbname=rchc',
+	'dsn'	=> 'mysql:host=localhost;dbname=rotary',
 	'hostname' => 'localhost',
 	'username' => 'root',
 	'password' => 'Elshadai7',
-	'database' => 'rchc',
+	'database' => 'rotary',
 	'dbdriver' => 'pdo',
 	'dbprefix' => 'av_',
 	'pconnect' => FALSE,

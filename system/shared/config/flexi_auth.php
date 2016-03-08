@@ -633,7 +633,7 @@
 	###++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++###
 
 	// Site title shown as 'from' header on emails.
-	$config['email']['site_title'] = 'Rotaract Club of Harare Central';
+	$config['email']['site_title'] = 'Rotary Club';
 
 	// Reply email shown as 'from' header on emails.
 	$config['email']['reply_email'] = 'secretary@rotaracthararecentral.org';
